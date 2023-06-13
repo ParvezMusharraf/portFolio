@@ -1,0 +1,493 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #323232;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; list-style: none; color:#DDD0C8;
+}
+.navbar a:hover{
+  color:#FFC0CB;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-link {
+  margin-left: 70px;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+}
+.nav-link:hover{
+  color:#FFC0CB;
+}
+
+.icons a {
+  margin: 4px;
+  padding: 10px;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #ddd0c8;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #323232;
+  text-align: left;
+}
+.text {
+  margin-left: 80px;
+}
+.text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Geologica", sans-serif;
+}
+.text p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-family: "Geologica", sans-serif;
+}
+
+/* About Section Styles */
+.about {
+  padding: 80px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #323232;
+  color: #ddd0c8;
+}
+.about_left {
+  width: 50vw;
+  padding-right: 10px;
+}
+button {
+  padding: 6px;
+  margin: 2px;
+  color: #323232;
+  background-color: #ddd0c8;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  float: left;
+  margin: 20px 0px 0 80px;
+  transition: border 1s;
+}
+button:hover {
+  font-weight: bold;
+  background-color: rgb(255, 253, 255);
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+.about p {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 80px;
+  padding-right: 300px;
+}
+.about_right {
+  width: 50vw;
+  padding: 10px;
+}
+.container {
+  width: 100%;
+  background-color: #323232;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+.about_right p {
+  font-family: "Geologica", sans-serif;
+  margin-top: 12px;
+}
+
+.html {
+  width: 90%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+.css {
+  width: 80%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+.js {
+  width: 65%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+.reactjs {
+  width: 40%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+.bootstrap {
+  width: 70%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+.git {
+  width: 60%;
+  background-color: #ddd0c8;
+  padding: 2px;
+}
+
+/* Services Section Styles */
+.services {
+  padding: 80px 0;
+  text-align: center;
+  color: #323232;
+  background-color: #ddd0c8;
+}
+
+.pro_services {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 10px;
+  margin: 50px;
+  color: #ddd0c8;
+  background-color: #323232;
+  height: 40vh;
+  width: 40vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: example;
+  animation-duration: 6s;
+  transition: width 1s;
+}
+@keyframes example {
+  from {
+    background-color: #ddd0c8;
+  }
+  to {
+    background-color: #323232;
+  }
+}
+.service:hover {
+  width: 50vh;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.service p {
+  font-size: 18px;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #b9a091;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact_right {
+  width: 50wh;
+}
+.inner_icon {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.inner_icon p {
+  text-align: left;
+  padding-left: 10px;
+}
+.contact_left {
+  width: 50wh;
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 300px;
+  background-color: #ddd0c8;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #323232;
+    color: #fff;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .nav-links {
+    list-style: none;
+    flex-direction: column;
+  }
+  .nav-link {
+    margin-left: 70px;
+    padding: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 23px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+
+  .icons {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .icons a {
+    margin: 24px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #323232;
+    color: #ddd0c8;
+  }
+  .about_left {
+    width: 50vw;
+    padding-right: 10px;
+  }
+  button {
+    padding: 6px;
+    margin: 2px;
+    color: #323232;
+    background-color: #ddd0c8;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    float: left;
+    margin: 20px 0px 0 80px;
+    transition: border 1s;
+  }
+  button:hover {
+    font-weight: bold;
+  }
+
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 80px;
+  }
+
+  .about p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 80px;
+    padding-right: 300px;
+  }
+  .about_right {
+    width: 50vw;
+    padding: 10px;
+    padding-left: 80px;
+  }
+  .container {
+    width: 100%;
+    background-color: #323232;
+  }
+
+  .skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .about_right p {
+    font-family: "Geologica", sans-serif;
+    margin-top: 12px;
+  }
+
+  .html {
+    width: 90%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+  .css {
+    width: 80%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+  .js {
+    width: 65%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+  .reactjs {
+    width: 40%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+  .bootstrap {
+    width: 70%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+  .git {
+    width: 60%;
+    background-color: #ddd0c8;
+    padding: 2px;
+  }
+
+  .services {
+    padding: 80px 0;
+    text-align: left;
+    color: #323232;
+    background-color: #ddd0c8;
+  }
+
+  .pro_services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .services h2 {
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 10px;
+    margin: 50px;
+    color: #ddd0c8;
+    background-color: #323232;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: example;
+    animation-duration: 4s;
+    transition: width 1s;
+  }
+  @keyframes example {
+    from {
+      background-color: #ddd0c8;
+    }
+    to {
+      background-color: #323232;
+    }
+  }
+  .service:hover {
+    width: 50vh;
+  }
+}
