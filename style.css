@@ -60,6 +60,24 @@ a {
   margin: 4px;
   padding: 10px;
 }
+.navbar .fa-brands{
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 20px;
+}
+.fa-github:is(:hover,:focus){
+  color: #ffc0cb;
+  outline-offset: 3px;
+}
+.fa-twitter:is(:hover,:focus){
+  color: #53d8fa;
+  outline-offset: 3px;
+}
+.fa-linkedin:is(:hover,:focus){
+  color: #0d91dd;
+  outline-offset: 3px;
+}
 
 /* Hero Section Styles */
 .hero {
