@@ -425,5 +425,13 @@ button:hover {
     margin-right: 60px;
   }
 }
+@media only screen and (max-width:400px){
+  .contact{padding: 30px;
+  height: 100vh;
+  }
+  .contact_left {
+    margin-left: auto;
+}
+}
 
 
