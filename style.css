@@ -30,10 +30,15 @@ a {
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
-  text-decoration: none; list-style: none; color:#DDD0C8;
+  text-decoration: none;
+  list-style: none;
+  color: #ddd0c8;
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 5px;
 }
-.navbar a:hover{
-  color:#FFC0CB;
+.navbar a:hover {
+  color: #ffc0cb;
 }
 
 .nav-links {
@@ -47,8 +52,8 @@ a {
   font-size: 23px;
   font-family: Arial, sans-serif;
 }
-.nav-link:hover{
-  color:#FFC0CB;
+.nav-link:hover {
+  color: #ffc0cb;
 }
 
 .icons a {
@@ -61,7 +66,7 @@ a {
   background-color: #ddd0c8;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -92,6 +97,7 @@ a {
   justify-content: space-between;
   background-color: #323232;
   color: #ddd0c8;
+  height: 100vh;
 }
 .about_left {
   width: 50vw;
@@ -187,6 +193,7 @@ button:hover {
   text-align: center;
   color: #323232;
   background-color: #ddd0c8;
+  height: 100vh;
 }
 
 .pro_services {
@@ -245,6 +252,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 100vh;
 }
 .contact_right {
   width: 50wh;
@@ -302,192 +310,120 @@ button:hover {
   padding: 20px;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #323232;
-    color: #fff;
-    flex-direction: column;
+@media only screen and (max-width: 975px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
   }
-  a {
-    text-decoration: none;
-  }
-
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px;
-  }
-
-  .nav-links {
-    list-style: none;
-    flex-direction: column;
-  }
-  .nav-link {
-    margin-left: 70px;
-    padding: 20px;
-    color: #fff;
-    transition: color 0.3s ease;
-    font-size: 23px;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-  }
-
   .icons {
-    margin: 20px;
-    flex-direction: column;
-  }
-
-  .icons a {
-    margin: 24px;
-    padding: 10px;
-    flex-direction: column;
-  }
-
-  .about {
-    padding: 80px 0;
-    text-align: center;
+    margin: 10px 10px 10px 30px ;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #323232;
-    color: #ddd0c8;
-  }
-  .about_left {
-    width: 50vw;
-    padding-right: 10px;
-  }
-  button {
-    padding: 6px;
-    margin: 2px;
-    color: #323232;
-    background-color: #ddd0c8;
-    border-radius: 10px;
-    border: none;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    float: left;
-    margin: 20px 0px 0 80px;
-    transition: border 1s;
-  }
-  button:hover {
-    font-weight: bold;
-  }
 
-  .about h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    text-align: left;
-    margin-left: 80px;
-  }
+}
+  .icons a {
+    justify-content: space-around;
+}
+.hero {
+  height: 100vh;
+}
+.about {
+  height: 100vh;
+}
 
+  .about_left{
+    width: 60vw;
+  } 
+  .about_right{
+    width: 40vw;
+  }
   .about p {
-    font-size: 18px;
-    text-align: left;
-    margin-left: 80px;
-    padding-right: 300px;
-  }
-  .about_right {
-    width: 50vw;
-    padding: 10px;
-    padding-left: 80px;
+    padding-right: 260px;
   }
   .container {
     width: 100%;
-    background-color: #323232;
   }
+  .pro_services {
+    margin: 20px;
+  }
+  .service{
+    margin:25x;
+  }
+  .contact {
+    padding: 60px;
+    height: 100vh;
+  }
+}
 
-  .skills {
-    text-align: right;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    border-radius: 10px;
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: -20px;
+  }
+  .navbar-brand {
+    padding: 10px;
+    margin: 10px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .nav-link {
+    padding: 5px;
+    margin-left: 30px;
+  }
+  .icons {
+    padding: 10px;
+    margin: 10px;
+  }
+  .about {
+    flex-direction: column;
+    height: auto;
 
-  .about_right p {
-    font-family: "Geologica", sans-serif;
-    margin-top: 12px;
   }
-
-  .html {
-    width: 90%;
-    background-color: #ddd0c8;
-    padding: 2px;
+  .about_right {
+    width: 100vw;
+    padding: 75px;
   }
-  .css {
-    width: 80%;
-    background-color: #ddd0c8;
-    padding: 2px;
-  }
-  .js {
-    width: 65%;
-    background-color: #ddd0c8;
-    padding: 2px;
-  }
-  .reactjs {
-    width: 40%;
-    background-color: #ddd0c8;
-    padding: 2px;
-  }
-  .bootstrap {
-    width: 70%;
-    background-color: #ddd0c8;
-    padding: 2px;
-  }
-  .git {
-    width: 60%;
-    background-color: #ddd0c8;
-    padding: 2px;
+  .container{
+    width: auto;
   }
 
   .services {
-    padding: 80px 0;
-    text-align: left;
-    color: #323232;
-    background-color: #ddd0c8;
+    height: auto;
   }
-
   .pro_services {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact {
     flex-direction: column;
   }
-  .services h2 {
-    font-size: 36px;
-    margin-left: 50px;
-    margin-bottom: 40px;
+  .contact_left {
+    margin-left: 75px;
   }
-
-  .service {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    padding: 10px;
-    margin: 50px;
-    color: #ddd0c8;
-    background-color: #323232;
-    height: 40vh;
-    width: 40vh;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: example;
-    animation-duration: 4s;
-    transition: width 1s;
+  .contact h2 {
+    align-items: center;
   }
-  @keyframes example {
-    from {
-      background-color: #ddd0c8;
-    }
-    to {
-      background-color: #323232;
-    }
-  }
-  .service:hover {
-    width: 50vh;
+  .contact-form button {
+    margin-right: 60px;
   }
 }
+
+
