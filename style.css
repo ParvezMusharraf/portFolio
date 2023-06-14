@@ -60,21 +60,21 @@ a {
   margin: 4px;
   padding: 10px;
 }
-.navbar .fa-brands{
+.navbar .fa-brands {
   color: white;
   border: 1px solid white;
   padding: 5px;
   border-radius: 20px;
 }
-.fa-github:is(:hover,:focus){
+.fa-github:is(:hover, :focus) {
   color: #ffc0cb;
   outline-offset: 3px;
 }
-.fa-twitter:is(:hover,:focus){
+.fa-twitter:is(:hover, :focus) {
   color: #53d8fa;
   outline-offset: 3px;
 }
-.fa-linkedin:is(:hover,:focus){
+.fa-linkedin:is(:hover, :focus) {
   color: #0d91dd;
   outline-offset: 3px;
 }
@@ -338,25 +338,24 @@ button:hover {
     overflow-x: hidden;
   }
   .icons {
-    margin: 10px 10px 10px 30px ;
+    margin: 10px 10px 10px 30px;
     display: flex;
     flex-direction: column;
-
-}
+  }
   .icons a {
     justify-content: space-around;
-}
-.hero {
-  height: 100vh;
-}
-.about {
-  height: 100vh;
-}
+  }
+  .hero {
+    height: 100vh;
+  }
+  .about {
+    height: 100vh;
+  }
 
-  .about_left{
+  .about_left {
     width: 60vw;
-  } 
-  .about_right{
+  }
+  .about_right {
     width: 40vw;
   }
   .about p {
@@ -368,8 +367,8 @@ button:hover {
   .pro_services {
     margin: 20px;
   }
-  .service{
-    margin:25x;
+  .service {
+    margin: 25x;
   }
   .contact {
     padding: 60px;
@@ -413,13 +412,12 @@ button:hover {
   .about {
     flex-direction: column;
     height: auto;
-
   }
   .about_right {
     width: 100vw;
     padding: 75px;
   }
-  .container{
+  .container {
     width: auto;
   }
 
@@ -443,13 +441,12 @@ button:hover {
     margin-right: 60px;
   }
 }
-@media only screen and (max-width:400px){
-  .contact{padding: 30px;
-  height: 100vh;
+@media only screen and (max-width: 400px) {
+  .contact {
+    padding: 30px;
+    height: 100vh;
   }
   .contact_left {
     margin-left: auto;
+  }
 }
-}
-
-
