@@ -17,7 +17,7 @@ body {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   justify-content: space-between;
   align-items: center;
   padding: 20px;
