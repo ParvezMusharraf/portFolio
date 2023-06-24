@@ -17,15 +17,24 @@ body {
 /* Navbar Styles */
 .navbar {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  width: 100vw;
   background-color: #323232;
   color: #fff;
+  /* background-color: transparent; */
 }
 a {
   text-decoration: none;
+  color: #323232;
 }
+
+/* .navbar-2{
+ background-color: #323232;
+  color: #fff;
+} */
 
 .navbar-brand {
   font-size: 24px;
@@ -47,10 +56,14 @@ a {
 }
 .nav-link {
   margin-left: 70px;
-  color: #fff;
+  /* color:#323232; */
+  color: white;
   transition: color 0.3s ease;
   font-size: 23px;
   font-family: Arial, sans-serif;
+}
+.link-2{
+  color: white;
 }
 .nav-link:hover {
   color: #ffc0cb;
@@ -124,7 +137,6 @@ a {
 button {
   padding: 6px;
   margin: 2px;
-  color: #323232;
   background-color: #ddd0c8;
   border-radius: 10px;
   border: none;
