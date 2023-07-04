@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,37 +18,30 @@ body {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   width: 100vw;
-  background-color: #323232;
-  color: #fff;
-  /* background-color: transparent; */
+  background: #323232;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 a {
   text-decoration: none;
-  color: #323232;
+  opacity: 0.75;
+  font-style:  Arial, sans-serif;
 }
-
-/* .navbar-2{
- background-color: #323232;
-  color: #fff;
-} */
-
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   list-style: none;
-  color: #ddd0c8;
+  color: #f0f0f0;
   border: 1px solid white;
   padding: 4px;
   border-radius: 5px;
 }
 .navbar a:hover {
-  color: #ffc0cb;
+  opacity: 1;
 }
 
 .nav-links {
@@ -65,9 +59,9 @@ a {
 .link-2{
   color: white;
 }
-.nav-link:hover {
+/* .nav-link:hover {
   color: #ffc0cb;
-}
+} */
 
 .icons a {
   margin: 4px;
@@ -94,9 +88,10 @@ a {
 
 /* Hero Section Styles */
 .hero {
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   background-size: cover;
   background-position: center;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -127,7 +122,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   background-color: #323232;
-  color: #ddd0c8;
+  color: #f0f0f0;
+  width: 100vw;
   height: 100vh;
 }
 .about_left {
@@ -137,13 +133,14 @@ a {
 button {
   padding: 6px;
   margin: 2px;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   border-radius: 10px;
   border: none;
   font-family: Arial, sans-serif;
   font-size: 20px;
   float: left;
   margin: 20px 0px 0 80px;
+  box-shadow: 0px 4px 4px rgba(192, 192, 192, 0.25);
   transition: border 1s;
 }
 button:hover {
@@ -181,6 +178,7 @@ button:hover {
   border-radius: 10px;
 }
 
+
 .about_right p {
   font-family: "Geologica", sans-serif;
   margin-top: 12px;
@@ -188,33 +186,36 @@ button:hover {
 
 .html {
   width: 90%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
 }
 .css {
   width: 80%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
 }
 .js {
   width: 65%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
 }
 .reactjs {
   width: 40%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
 }
 .bootstrap {
   width: 70%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
 }
 .git {
   width: 60%;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   padding: 2px;
+}
+.container span{
+  color: #000000;
 }
 
 /* Services Section Styles */
@@ -222,8 +223,9 @@ button:hover {
   padding: 80px 0;
   text-align: center;
   color: #323232;
-  background-color: #ddd0c8;
+  background-color: #f0f0f0;
   height: 100vh;
+  width: 100vw;
 }
 
 .pro_services {
@@ -242,22 +244,23 @@ button:hover {
   margin-bottom: 40px;
   padding: 10px;
   margin: 50px;
-  color: #ddd0c8;
-  background-color: #323232;
+  color: #000000;
+  background-color: #00000029;
   height: 40vh;
   width: 40vh;
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   animation-name: example;
   animation-duration: 6s;
   transition: width 1s;
 }
 @keyframes example {
   from {
-    background-color: #ddd0c8;
+    background-color: #f0f0f0;
   }
   to {
-    background-color: #323232;
+    background-color:#00000029;
   }
 }
 .service:hover {
@@ -278,11 +281,12 @@ button:hover {
 .contact {
   padding: 80px 0;
   text-align: center;
-  background-color: #b9a091;
+  background-color:#F9F4F4;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 100vh;
+  width: 100vw;
 }
 .contact_right {
   width: 50wh;
@@ -317,10 +321,11 @@ button:hover {
 .contact-form input[type="text"],
 .contact-form textarea {
   width: 300px;
-  background-color: #ddd0c8;
-  padding: 10px;
+  background-color:transparent;
+  padding: 10px 6px 6px;
   margin: 10px;
   border-radius: 10px;
+  /* border: none  1px */
   border: 1px solid #ccc;
 }
 
@@ -330,6 +335,7 @@ button:hover {
   color: #fff;
   border: none;
   border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
@@ -348,6 +354,9 @@ button:hover {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+  }
+  .navbar{
+    position: relative;
   }
   .icons {
     margin: 10px 10px 10px 30px;
@@ -429,6 +438,9 @@ button:hover {
     width: 100vw;
     padding: 75px;
   }
+  .about p {
+    padding-right: 160px;
+  }
   .container {
     width: auto;
   }
@@ -454,6 +466,9 @@ button:hover {
   }
 }
 @media only screen and (max-width: 400px) {
+  .about p {
+    padding-right: 60px;
+  }
   .contact {
     padding: 30px;
     height: 100vh;
