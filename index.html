@@ -3,88 +3,93 @@
 
 <head>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="/style.css">
+
+  <!-- ===========================Icon Links=========================== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--=========================== styles links=========================== -->
+  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar">
-    <a class="navbar-brand" href="#">My Portfolio</a>
+  <!-- ===========================Navbar ===========================-->
+  <nav id="navbar" class="navbar" data-aos="fade-down">
+    <a class="navbar-brand" href="#" >My Portfolio</a>
     <ul class="nav-links">
       <li><a class="nav-link" href="#hero">Home</a></li>
       <li><a class="nav-link" href="#about">About</a></li>
       <li><a class="nav-link" href="#services">Services</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
-    <div class="icons">
+    <div class="icons" >
       <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
       <a href="https://twitter.com/"><i class="fa-brands fa-twitter "></i></a>
       <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="text" id="text">
-    <h2>My name is</h2>
-    <h1>Parvez Musharraf</h1>
-    <p>and i am frontend developer</p>
-  </div>
+  <!--=========================== Hero Section ===========================-->
+  <section class="hero" id="hero" >
+    <div class="text" id="text" >
+      <h2>Hello, My name is</h2>
+      <h1>Parvez Musharraf</h1>
+      <p>and i am frontend developer</p>
+    </div>
   </section>
 
-  <!-- About Section -->
+  <!--=========================== About Section ===========================-->
   <section class="about" id="about">
-    <section class="About_left">
+    <section class="about_left " id="about-left">
       <h2>About Me</h2>
       <p>Hello there I have completed my bachlors degree in <strong>BCA</strong> last year and I am a Front-End
         developer, and I love to write a code for web development, and i have experties in such languages and
-        technologys, HTML, Css, javascript, reactjs, Bootstrap, git/github </p>
+        technologys, HTML, Css, javascript, reactjs, Bootstrap, git/github. </p>
       <button><a href="#contact">Contact now</a></button>
     </section>
 
 
-    <section class="about_right">
+    <section class="about_right " id="about_right">
       <p>html</p>
       <div class="container">
-        <div class="skills html">90%</div>
+        <div class="skills html"><span>90%</span></div>
       </div>
 
       <p>CSS</p>
       <div class="container">
-        <div class="skills css">80%</div>
+        <div class="skills css"> <span>80%</span> </div>
       </div>
 
       <p>JavaScript</p>
       <div class="container">
-        <div class="skills js">65%</div>
+        <div class="skills js"> <span>65%</span></div>
       </div>
 
       <p>React</p>
       <div class="container">
-        <div class="skills reactjs ">40%</div>
+        <div class="skills reactjs "><span>40%</span></div>
       </div>
 
       <p>Bootstrap</p>
       <div class="container">
-        <div class="skills bootstrap ">70%</div>
+        <div class="skills bootstrap "><span>70%</span></div>
       </div>
       <p>Git/Github</p>
       <div class="container">
-        <div class="skills git ">60%</div>
+        <div class="skills git "><span>65%</span></div>
       </div>
     </section>
   </section>
 
 
 
-  <!-- Services Section -->
+  <!--=========================== Services Section ===========================-->
   <section class="services" id="services">
     <h2>My Services</h2>
-    <section class="pro_services">
+    <section class="pro_services" id="pro_services">
       <div class="service">
         <p>
           <i class="fa-brands fa-html5 fa-3x "></i>
@@ -106,9 +111,9 @@
     </section>
   </section>
 
-  <!-- Contact Section -->
+  <!--=========================== Contact Section ===========================-->
   <section class="contact" id="contact">
-    <section class="contact_left">
+    <section class="contact_left" id="contact_left">
       <h2>Contact Me</h2>
       <section class="Contact_icon">
         <div class="inner_icon">
@@ -121,11 +126,11 @@
         </div>
         <div class="inner_icon">
           <i class="fa-sharp fa-solid fa-location-dot"></i>
-          <p>bharat Kirana New tarfail akola,Maharashtra Pin 444001</p>
+          <p>VHB colony New tarfail akola,Maharashtra Pin 444001</p>
         </div>
       </section>
     </section>
-    <section class="contact_right">
+    <section class="contact_right" id="contact_right">
       <form class="contact-form">
         <input type="text" placeholder="Name">
         <input type="text" placeholder="Email">
@@ -135,19 +140,12 @@
     </section>
   </section>
 
-  <!-- Footer -->
+  <!--=========================== Footer ===========================-->
   <footer class="footer">
     &copy; 2023 My Portfolio. All rights reserved.
   </footer>
 
-  <script>
-// window.addEventListener('scroll',function(){
-
-//         const navbar_2 = document.getElementById('navbar');
-//         if(window.scrollY>5) navbar_2.classList.add('navbar-2')
-//         else navbar_2.classList.remove('navbar-2')
-//     })
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>
