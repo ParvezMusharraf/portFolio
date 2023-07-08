@@ -1,21 +1,19 @@
 /* Global Styles */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
 
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
   font-family: Arial, sans-serif;
+  overflow-y: scroll;
+overflow-x: hidden;
 }
 
-/* Navbar Styles */
+/*======================== Navbar Styles=============================*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,7 +26,7 @@ body {
 a {
   text-decoration: none;
   opacity: 0.75;
-  font-style:  Arial, sans-serif;
+  font-style: Arial, sans-serif;
 }
 .navbar-brand {
   font-size: 24px;
@@ -56,7 +54,7 @@ a {
   font-size: 23px;
   font-family: Arial, sans-serif;
 }
-.link-2{
+.link-2 {
   color: white;
 }
 /* .nav-link:hover {
@@ -85,8 +83,8 @@ a {
   color: #0d91dd;
   outline-offset: 3px;
 }
-
-/* Hero Section Styles */
+ 
+/* ===========================Hero Section Styles===========================*/
 .hero {
   background-color: #f0f0f0;
   background-size: cover;
@@ -102,6 +100,7 @@ a {
 }
 .text {
   margin-left: 80px;
+  display: none;
 }
 .text h1 {
   font-size: 48px;
@@ -114,7 +113,7 @@ a {
   font-family: "Geologica", sans-serif;
 }
 
-/* About Section Styles */
+/*=========================== About Section Styles ===========================*/
 .about {
   padding: 80px 0;
   text-align: center;
@@ -127,8 +126,10 @@ a {
   height: 100vh;
 }
 .about_left {
-  width: 50vw;
+  width: 60vw;
+  margin-top: 30px;
   padding-right: 10px;
+  display: none;
 }
 button {
   padding: 6px;
@@ -162,8 +163,9 @@ button:hover {
   padding-right: 300px;
 }
 .about_right {
-  width: 50vw;
+  width: 40vw;
   padding: 10px;
+  display: none;
 }
 .container {
   width: 100%;
@@ -177,7 +179,6 @@ button:hover {
   color: white;
   border-radius: 10px;
 }
-
 
 .about_right p {
   font-family: "Geologica", sans-serif;
@@ -214,11 +215,11 @@ button:hover {
   background-color: #f0f0f0;
   padding: 2px;
 }
-.container span{
+.container span {
   color: #000000;
 }
 
-/* Services Section Styles */
+/* ===========================Services Section Styles=========================== */
 .services {
   padding: 80px 0;
   text-align: center;
@@ -229,7 +230,7 @@ button:hover {
 }
 
 .pro_services {
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: row;
 }
@@ -250,21 +251,11 @@ button:hover {
   width: 40vh;
   border-radius: 20px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  animation-name: example;
-  animation-duration: 6s;
-  transition: width 1s;
-}
-@keyframes example {
-  from {
-    background-color: #f0f0f0;
-  }
-  to {
-    background-color:#00000029;
-  }
+  transition: width 5s;
 }
 .service:hover {
   width: 50vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .service h3 {
@@ -277,11 +268,11 @@ button:hover {
   font-size: 18px;
 }
 
-/* Contact Section Styles */
+/* ===========================Contact Section Styles=========================== */
 .contact {
   padding: 80px 0;
   text-align: center;
-  background-color:#F9F4F4;
+  background-color: #f9f4f4;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -290,6 +281,7 @@ button:hover {
 }
 .contact_right {
   width: 50wh;
+  display: none;
 }
 .inner_icon {
   display: flex;
@@ -303,6 +295,7 @@ button:hover {
 }
 .contact_left {
   width: 50wh;
+  display: none;
 }
 
 .contact h2 {
@@ -321,7 +314,7 @@ button:hover {
 .contact-form input[type="text"],
 .contact-form textarea {
   width: 300px;
-  background-color:transparent;
+  background-color: transparent;
   padding: 10px 6px 6px;
   margin: 10px;
   border-radius: 10px;
@@ -339,13 +332,126 @@ button:hover {
   cursor: pointer;
 }
 
-/* Footer Styles */
+/*=========================== Footer Styles ===========================*/
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+/*=========================== Animation Classes=========================== */
+
+.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* SCALE UP ANIMATION  CLASS */
+.scale-up-hor-left {
+	-webkit-animation: scale-up-hor-left 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-left 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+
+/* SCALE Up ANIMATION */
+.scale-up-top {
+	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+}
+@keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+  }
+}
+
+
+
+/*=========================== MEDIA QUERYS=========================== */
+
 @media only screen and (max-width: 975px) {
   html,
   body {
@@ -355,7 +461,7 @@ button:hover {
     padding: 0px;
     overflow-x: hidden;
   }
-  .navbar{
+  .navbar {
     position: relative;
   }
   .icons {
@@ -369,18 +475,24 @@ button:hover {
   .hero {
     height: 100vh;
   }
+  .hero text{
+    display: block;
+  }
   .about {
     height: 100vh;
   }
 
   .about_left {
     width: 60vw;
+    display: block;
   }
+  
   .about_right {
     width: 40vw;
+    display: block;
   }
   .about p {
-    padding-right: 260px;
+    padding-right: 160px;
   }
   .container {
     width: 100%;
@@ -395,6 +507,12 @@ button:hover {
     padding: 60px;
     height: 100vh;
   }
+  .contact_left{
+    display: block;
+  }
+  .contact_right{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -406,6 +524,7 @@ button:hover {
     padding: 0;
     overflow-x: hidden;
   }
+
   .navbar {
     display: flex;
     align-items: center;
@@ -440,6 +559,7 @@ button:hover {
   }
   .about p {
     padding-right: 160px;
+    width: 100vw;
   }
   .container {
     width: auto;
@@ -467,7 +587,7 @@ button:hover {
 }
 @media only screen and (max-width: 400px) {
   .about p {
-    padding-right: 60px;
+    padding-right: auto;
   }
   .contact {
     padding: 30px;
